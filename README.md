@@ -1,24 +1,37 @@
-Detailed Breakdown
-Base Class Animal (abstract class):
-Defines a property Voice (the sound the animal makes) and an abstract method Speak() that each animal class must override to output its sound.
+# Animal Zoo Console Application
 
-Interfaces:
+A simple console application in C# demonstrating Object-Oriented Programming concepts such as abstraction, inheritance, interfaces, and the Factory design pattern.
 
-IFlyable — defines a Fly() method for animals that can fly.
+---
 
-ISwimmable — defines a Swim() method for animals that can swim.
+## Overview
 
-Animal Classes (Bird, Cat, Dog, Fish, Duck):
-Each inherits from Animal and implements interfaces as appropriate (e.g., Bird and Duck implement IFlyable, Dog and Fish implement ISwimmable).
+This project models a zoo with various animals, each having its own sound and special abilities like flying or swimming.
 
-AnimalFactory:
-Creates and returns the correct animal object based on the input type and voice. This separates the object creation logic from the rest of the program.
+### Key Features
 
-Zoo (Service class):
-Maintains a list of animals, provides methods to add animals (AddAnimal) and to display all animals (ShowAllAnimals). When displaying, it calls Speak() and invokes special ability methods if implemented.
+- **Abstract Base Class:** `Animal` defines a common structure for all animals with a `Voice` property and an abstract `Speak()` method.
+- **Interfaces:**  
+  - `IFlyable` — animals that can fly implement this interface with a `Fly()` method.  
+  - `ISwimmable` — animals that can swim implement this interface with a `Swim()` method.
+- **Animal Classes:** Specific animals (`Bird`, `Cat`, `Dog`, `Fish`, `Duck`) inherit from `Animal` and implement interfaces as appropriate.
+- **Factory Pattern:** `AnimalFactory` creates instances of animals based on input, abstracting object creation logic.
+- **Zoo Service:** Manages a collection of animals, adding new animals and displaying their sounds and abilities.
+- **Custom Exception:** `InvalidAnimalException` handles unknown animal types gracefully.
 
-Program.cs (Main entry point):
-Runs the program, adds some initial animals, and then enters a loop to receive user input to add more animals or exit. It continuously shows all animals after each addition.
+---
 
-InvalidAnimalException:
-A custom exception thrown when the factory receives an unknown animal type, allowing the program to catch this and display an error message without crashing.
+## Getting Started
+
+### Prerequisites
+
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+- Any C# IDE or editor (Visual Studio, VS Code, JetBrains Rider, etc.)
+
+### How to Run
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
+   cd your-repo-name
