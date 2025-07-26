@@ -7,27 +7,19 @@ namespace Begin00.Tests
 {
     public class AnimalFactoryTests
     {
-        [Fact]
-        public void CreateAnimal_ValidType_ReturnsCorrectAnimal()
+        [Theory]
+        [InlineData("dog", "bark", typeof(Dog))]
+        [InlineData("cat", "meows", typeof(Cat))]
+        [InlineData("bird", "chirps", typeof(Bird))]
+        [InlineData("fish", "silent", typeof(Fish))]
+        [InlineData("duck", "quacks", typeof(Duck))]
+        public void CreateAnimal_ValidType_ReturnsCorrectAnimal(string type, string sound, Type expectedType)
         {
             var factory = new AnimalFactory();
-
-            var dog = factory.CreateAnimal("dog", "bark");
-            Assert.IsType<Dog>(dog);
-
-            var cat = factory.CreateAnimal("cat", "meows");
-            Assert.IsType<Cat>(cat);
-
-            var bird = factory.CreateAnimal("bird", "chirps");
-            Assert.IsType<Bird>(bird);
-
-            var fish = factory.CreateAnimal("fish", "silent");
-            Assert.IsType<Fish>(fish);
-
-            var duck = factory.CreateAnimal("duck", "quacks");
-            Assert.IsType<Duck>(duck);
-
+            var animal = factory.CreateAnimal(type, sound);
+            Assert.IsType(expectedType, animal);
         }
+
         [Fact]
         public void CreateAnimal_InvalidType_ThrowsException()
         {

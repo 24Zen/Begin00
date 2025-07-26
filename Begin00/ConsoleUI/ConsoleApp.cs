@@ -12,7 +12,9 @@ namespace Begin00.ConsoleUI
         public void Run()
         {
             SeedAnimals();
+            Console.WriteLine("\n--- Initial Animals ---");
             zoo.ShowAllAnimals();
+            ShowAllVoices();
 
             while (true)
             {
@@ -22,13 +24,17 @@ namespace Begin00.ConsoleUI
                 try
                 {
                     zoo.AddAnimal(type, voice);
+                    Console.WriteLine($"\nAdded animal '{type}' with voice '{voice}'");
                 }
                 catch (InvalidAnimalException ex)
                 {
                     Console.WriteLine($"Error: {ex.Message}");
                 }
 
+                Console.WriteLine("\n--- Animals ---");
                 zoo.ShowAllAnimals();
+
+                ShowAllVoices();
             }
         }
 
@@ -44,19 +50,25 @@ namespace Begin00.ConsoleUI
         private string Prompt(string message)
         {
             Console.Write(message);
-            return Console.ReadLine()!;
+            return Console.ReadLine() ?? string.Empty;
         }
 
         private string PromptWithExit(string message)
         {
             Console.Write(message);
-            string input = Console.ReadLine()!;
-            if (input.ToLower() == "exit")
+            string input = Console.ReadLine() ?? string.Empty;
+            if (input.Trim().ToLower() == "exit")
             {
                 Console.WriteLine("Exiting program...");
                 Environment.Exit(0);
             }
             return input;
+        }
+
+        private void ShowAllVoices()
+        {
+            Console.WriteLine("\n--- All Voices ---");
+            zoo.ShowAllVoices();
         }
     }
 }
