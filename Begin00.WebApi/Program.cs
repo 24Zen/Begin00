@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /*
+=======
+>>>>>>> b45826d1fd259302da5381a25569fc3cce90adf2
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -43,6 +46,7 @@ record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
+<<<<<<< HEAD
 */
 
 using Microsoft.OpenApi.Models;
@@ -106,3 +110,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+=======
+>>>>>>> b45826d1fd259302da5381a25569fc3cce90adf2
