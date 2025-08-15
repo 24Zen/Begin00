@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Begin00.Models;
 using Begin00.Exceptions;
 
@@ -6,18 +7,22 @@ namespace Begin00.Services
 {
     public class AnimalFactory
     {
+        private readonly Dictionary<string, Func<string, Animal>> creators = new()
+        {
+            { "dog", voice => new Dog { Voice = voice } },
+            { "cat", voice => new Cat { Voice = voice } },
+            { "bird", voice => new Bird { Voice = voice } },
+            { "fish", voice => new Fish { Voice = voice } },
+            { "duck", voice => new Duck { Voice = voice } }
+        };
+
         public Animal CreateAnimal(string type, string voice)
         {
-            switch (type.ToLower())
+            if (creators.TryGetValue(type.ToLower(), out var creator))
             {
-                case "dog": return new Dog { Voice = voice };
-                case "cat": return new Cat { Voice = voice };
-                case "bird": return new Bird { Voice = voice };
-                case "fish": return new Fish { Voice = voice };
-                case "duck": return new Duck { Voice = voice };
-                default:
-                    throw new InvalidAnimalException($"Animal type '{type}' is not recognized.");
+                return creator(voice);
             }
+            throw new InvalidAnimalException($"Animal type '{type}' is not recognized.");
         }
     }
 }

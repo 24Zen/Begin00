@@ -1,8 +1,3 @@
-C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\Begin00.csproj.AssemblyReference.cache
-C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\Begin00.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\Begin00.AssemblyInfoInputs.cache
-C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\Begin00.AssemblyInfo.cs
-C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\Begin00.csproj.CoreCompileInputs.cache
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\bin\Debug\net8.0\testhost.dll
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\bin\Debug\net8.0\xunit.abstractions.dll
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\bin\Debug\net8.0\testhost.exe
@@ -89,6 +84,12 @@ C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\bin\Debug\net8.0\zh-Hans\Microsof
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\Begin00.csproj.AssemblyReference.cache
+C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\Begin00.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\Begin00.AssemblyInfoInputs.cache
+C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\Begin00.AssemblyInfo.cs
+C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\Begin00.csproj.CoreCompileInputs.cache
+C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\Begin00.sourcelink.json
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\Begin00.csproj.Up2Date
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\Begin00.dll
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00\obj\Debug\net8.0\refint\Begin00.dll

@@ -98,6 +98,7 @@ C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00.Tests\obj\Debug\net8.0\Begin00.Te
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00.Tests\obj\Debug\net8.0\Begin00.Tests.AssemblyInfoInputs.cache
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00.Tests\obj\Debug\net8.0\Begin00.Tests.AssemblyInfo.cs
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00.Tests\obj\Debug\net8.0\Begin00.Tests.csproj.CoreCompileInputs.cache
+C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00.Tests\obj\Debug\net8.0\Begin00.Tests.sourcelink.json
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00.Tests\obj\Debug\net8.0\Begin00..E0462FCC.Up2Date
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00.Tests\obj\Debug\net8.0\Begin00.Tests.dll
 C:\Users\ESJAYX\Desktop\DotNet\Begin00\Begin00.Tests\obj\Debug\net8.0\refint\Begin00.Tests.dll
